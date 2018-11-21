@@ -1391,7 +1391,7 @@ header a:hover,
 	padding-bottom: 200px;
 }
 .banner_bg1 {
-	background-image:url('../images/banner_bg1.png');
+	background-image:url('../assets/banner_bg1.png');
 }
 .banner_text h1 {
 	color: #ffffff;
@@ -6230,7 +6230,6 @@ button.btn-white:hover {
 	border-color: #ff69c9;
 }
 .wp_pattern {
-	background-image: url("../images/whitepaper_pattern.png");
 	background-position: center bottom;
 	background-repeat: repeat-x;
 	background-size: contain;
