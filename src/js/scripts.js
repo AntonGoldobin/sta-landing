@@ -1,9 +1,3 @@
-/*===================================
-Author       : Bestwebcreator.
-Template Name: Cryptocash – ICO, Cryptocurrency Website & ICO Landing Page HTML + Dashboard Template
-Version      : 1.6
-===================================*/
-
 (function($) {
 	'use strict';
 	
@@ -228,39 +222,17 @@ Version      : 1.6
 				},
 				"retina_detect": true
 			}
-	
+
 		);
 	}
-	
+
   	/*===================================*
 	05. ROAD MAP SLIDER JS
 	*===================================*/
-	 $('.roadmap').owlCarousel({
-	     loop: false,
-	     margin: 30,
-		 autoHeight: true,
-	     nav: true,
+	 $('.carousel-news').owlCarousel({
 	     navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
-	     responsive: {
-	         0: {
-	             items: 1,
-	         },
-	         380: {
-	             items: 2,
-	         },
-	         600: {
-	             items: 3,
-				 margin: 15
-	         },
-	         1000: {
-	             items: 5,
-	         },
-	         1199: {
-	             items: 6
-	         }
-	     }
 	 });
-	 
+
 	 $('.roadmap_wrap').owlCarousel({
 	     loop: false,
 	     margin: 30,
@@ -309,7 +281,7 @@ Version      : 1.6
 	         }
 	     }
 	 });
-	 
+
 	/*===================================*
 	06. BLOG SLIDER S
 	*===================================*/
@@ -336,10 +308,10 @@ Version      : 1.6
 	         }
 	     }
 	 });
-	 
+
 	/*===================================*
 	07. TESTIMONIAL SLIDER JS
-	*===================================*/	 
+	*===================================*/
 	$('.testimonial_slider').owlCarousel({
 	     loop: false,
 	     margin: 30,
@@ -361,7 +333,7 @@ Version      : 1.6
 	         }
 	     }
 	 });
-	 
+
 	/*===================================*
      08.COUNTDOWN JS
     *===================================*/
@@ -371,7 +343,7 @@ Version      : 1.6
             $(this).html(tm.strftime('<span class="counter_box"><span class="tk_counter days">%D </span><span class="tk_text">Days</span></span><span class="counter_box"><span class="tk_counter hours">%H</span><span class="tk_text">Hours</span></span><span class="counter_box"><span class="tk_counter minutes">%M</span><span class="tk_text">Minutes</span></span><span class="counter_box"><span class="tk_counter seconds">%S</span><span class="tk_text">Seconds</span></span>'));
         });
     });
-	
+
 	/*===================================*
 	 09. VIDEO JS
 	*===================================*/
@@ -411,7 +383,7 @@ Version      : 1.6
 	        }
 	    });
 	});
-	
+
 	/*===================================*
 	11. SCROLLUP JS
 	*===================================*/
@@ -422,7 +394,7 @@ Version      : 1.6
 			$('.scrollup').fadeOut();
 		}
 	});
-	
+
 	$(".scrollup").on('click', function (e) {
 		e.preventDefault();
 		$('html, body').animate({
@@ -430,7 +402,7 @@ Version      : 1.6
 		}, 600);
 		return false;
 	});
-	
+
 	/*===================================*
 	12. POPUP JS
 	*===================================*/
@@ -439,27 +411,27 @@ Version      : 1.6
 		preloader: true,
 		mainClass: 'mfp-zoom'
 	});
-	
+
 	/*===================================*
 	13. ANIMATION JS
 	*===================================*/
 	$(function() {
-	
+
 		function ckScrollInit(items, trigger) {
 			items.each(function() {
 				var ckElement = $(this),
 					AnimationClass = ckElement.attr('data-animation'),
 					AnimationDelay = ckElement.attr('data-animation-delay');
-	
+
 				ckElement.css({
 					'-webkit-animation-delay': AnimationDelay,
 					'-moz-animation-delay': AnimationDelay,
 					'animation-delay': AnimationDelay,
 					opacity: 0
 				});
-	
+
 				var ckTrigger = (trigger) ? trigger : ckElement;
-	
+
 				ckTrigger.waypoint(function() {
 					ckElement.addClass("animated").css("opacity", "1");
 					ckElement.addClass('animated').addClass(AnimationClass);
@@ -469,12 +441,12 @@ Version      : 1.6
 				});
 			});
 		}
-	
+
 		ckScrollInit($('.animation'));
 		ckScrollInit($('.staggered-animation'), $('.staggered-animation-wrap'));
-	
+
 	});
-	
+
 	/*===================================*
 	14. START COUNTUP JS
 	*===================================*/
@@ -489,17 +461,17 @@ Version      : 1.6
 	15. COLOR SWITCHHER JS
 	*===================================*/
 	$(".color-switch").on("click", "button", function() {
-	
+
 		$(this).addClass("active").siblings().removeClass("active");
 		$("#layoutstyle").attr("href", "src/assets/color/" + $(this).val() + ".css");
-	
+
 	});
-	
+
 	$(".icon").on("click", function() {
 		$(".color-switch").toggleClass("switch-active");
 		$(this).toggleClass("switch-active");
 	});
-	
+
 	$(function() {
 		$('#doc_select').change(function(){
 			$('.document_tab .tab-pane').removeClass('show active');

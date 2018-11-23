@@ -1,0 +1,36 @@
+
+@media (max-width: 767px) {
+    section.team .team__list .team__list-item {
+        text-align: center
+    }
+}
+@media (max-width: 991px) {
+    section.team .team__list {
+        padding-top: 0
+    }
+}
+section.team {
+    margin-bottom: 65px
+}
+
+section.team .slick-arrow {
+    top: 268px
+}
+
+section.team .team__list {
+    margin-top: -20px
+}
+
+section.team .team__list .team__list-item {
+    -o-transition: .35s;
+    -webkit-transition: .35s;
+    border-radius: 12px;
+    padding: 20px 32px;
+    transition: .35s
+}
+
+@media (max-width: 991px) {
+    section.team .team__list .team__list-item {
+        margin-bottom: 15px
+    }
+}
