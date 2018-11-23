@@ -2141,8 +2141,11 @@ header a:hover,
 
 .investor-area {
 	background: #1e0074;
-	padding-top: 150px;
-	padding-bottom: 270px;
+	padding-top: 100px;
+	padding-bottom: 130px;
+}
+.investor-area .btn{
+	margin-top: 40px;
 }
 .investor-area.homepage-4 {
 	background: #fff;
@@ -2157,7 +2160,7 @@ header a:hover,
 	width: 100%;
 	height: 100%;
 	content: "";
-	opacity: 0.3;
+	opacity: 0.8;
 	background-image: url(http://marveltheme.com/tf/html/crypcash/crypcash-a/assets/img/bg-shape/work-area-bg.png);
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -2167,7 +2170,10 @@ header a:hover,
 	padding-top: 140px;
 	padding-bottom: 140px;
 }
-
+.single-token img{
+	width: 178px;
+	height: 178px;
+}
 .investor-area .section-title p {
 	font-size: 14.15px;
 	color: #b6c1fa;
@@ -2190,40 +2196,26 @@ header a:hover,
 	letter-spacing: -2px;
 	font-weight: 900;
 	text-transform: uppercase;
-	margin-bottom: 30px;
-}
-.single-token img {
-	height: 67px;
+	margin-bottom: 70px;
 }
 .investor-area.homepage-5 .single-token {
 	text-align: center;
 }
 .token-meta h4 {
-	font-size: 20px;
-	color: #fff;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
 	margin-top: 30px;
-}
-.investor-area.homepage-4 .token-meta h4 {
-	color: #304ffe;
-}
-.investor-area.homepage-6 .token-meta h4 {
-	color: #2fc8fe;
+	font-size: 23px;
+	font-weight: 600;
+	color: #6101b5;
+
 }
 
 .token-meta p {
+	width: 80%;
+	margin-left: 10%;
 	font-size: 16px;
-	color: #b6c1fa;
-	line-height: 28px;
-	margin-top: 30px;
-}
-
-.investor-area.homepage-4 .token-meta p {
-	color: #30375f;
-}
-.investor-area.homepage-6 .token-meta p {
-	color: #fff;
+	color: #4d5165;
+	line-height: 22px;
+	margin-top: 13px;
 }
 
 .t-mt-80{
@@ -2234,18 +2226,12 @@ header a:hover,
 *===================================*/
 
   .client-area {
-	  background: #1e0074;
-	  padding-top: 150px;
-	  padding-bottom: 270px;
+	  background: #582090;
+	  padding-top: 100px;
+	  padding-bottom: 130px;
   }
-.client-area.homepage-4 {
-	background: #fff;
-}
-.client-area.homepage-6 {
-	background: #2a355c;
-}
-.client-area.homepage-6 {
-	background: #2a355c;
+.client-area .btn{
+	margin-top: 40px;
 }
 .client-area.homepage-6:before {
 	position: absolute;
@@ -2280,37 +2266,26 @@ header a:hover,
 }
 
 .client-area .section-title h2 {
-	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
-	line-height: 46px;
-	margin-bottom: 15px;
-}
-.single-token img {
-	height: 67px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	line-height: 50px;
+	letter-spacing: -2px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 70px;
 }
 .client-area.homepage-5 .single-token {
 	text-align: center;
 }
-.token-meta h4 {
-	font-size: 20px;
-	color: #fff;
+.client-area .token-meta h4 {
+	color: white;
 	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
+	font-size: 23px;
+	font-weight: 600;
 	margin-top: 30px;
-}
-.client-area.homepage-4 .token-meta h4 {
-	color: #304ffe;
-}
-.client-area.homepage-6 .token-meta h4 {
-	color: #2fc8fe;
 }
 
-.token-meta p {
-	font-size: 16px;
-	color: #b6c1fa;
-	line-height: 28px;
-	margin-top: 30px;
-}
 
 .client-area.homepage-4 .token-meta p {
 	color: #30375f;
@@ -2330,7 +2305,7 @@ ABOUT US SECTION
 	position: relative;
 }
 .team__list-person:hover .person-back{
-	background-color: deepskyblue;
+	background-color: #67E1D8;
 	z-index: 500;
 }
 .team__list-person p{
@@ -2338,15 +2313,27 @@ ABOUT US SECTION
 	font-size: 14px;
 	line-height: 20px;
 	color: white;
-	background-color: deepskyblue;
+	background-color: #67E1D8;
 }
 .team__list-person:hover p{
 	display: unset;
 	position: absolute;
-	background-color: deepskyblue;
-	padding: 20px;
+	background-color: #67E1D8;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 40px;
 	width: 100%;
 	left: 0;
+}
+#team h2{
+	color: #6000b5;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	line-height: 50px;
+	letter-spacing: -2px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 70px;
 }
 
 
@@ -2422,14 +2409,26 @@ section.team .img img {
 	margin: auto;
 	padding: 2px
 }
-
+section.team h4{
+	color: #8313b9;
+	font-family: Montserrat;
+	font-weight: 800;
+	font-size: 15px;
+	text-align: start;
+	margin-left: 10%;
+}
 section.team h3 {
-	color: #1de5e2;
-	font-size: 21px;
-	font-weight: 700;
-	line-height: 32px;
-	margin: 0;
-	text-transform: uppercase
+	color: #582090;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	margin-top: -34px;
+	width: 50%;
+	text-align: left;
+	line-height: 20px;
+	letter-spacing: 0px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-left: 10%;
 }
 
 @media (max-width: 991px) {
@@ -4525,6 +4524,17 @@ accordion
 	margin-bottom: 10px;
 }
 
+#faq h2{
+	color: #6000b5;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	line-height: 50px;
+	letter-spacing: -2px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
 
 
 /*===================================*
@@ -4534,6 +4544,19 @@ accordion
 /*===================================*
 11. CONTACT SECTION
 *===================================*/
+#contact h2{
+	color: #6000b5;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	line-height: 50px;
+	letter-spacing: -2px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 70px;
+}
+.title_default_light h4, .title_default_dark h4{
+	font-size: 30px;
+}
 .contact_section {
 	overflow: hidden;
 }
@@ -5315,8 +5338,16 @@ app footer
 /*===================================*
 18. BLOG SECTION
 *====================================*/
-.news-card{
 
+#blog h2{
+	color: #6000b5;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 60px;
+	line-height: 50px;
+	letter-spacing: -2px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 .blog_content {
 	background-color: #ffffff;
@@ -5324,6 +5355,7 @@ app footer
 	display: inline-block;
 	width: 100%;
 }
+
 .blog_text {
 	padding: 15px;
 }
@@ -5351,6 +5383,8 @@ app footer
 	border-radius: 10px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	margin-top: 20px;
+	margin-bottom: 10px;
+	height: 250px;
 }
 .blog_meta li {
 	display: inline-block;
