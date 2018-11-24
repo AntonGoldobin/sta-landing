@@ -2049,6 +2049,7 @@ header a:hover,
     padding: 20px 15px;
     position: relative;
 	margin-top: 20px;
+	height: 130px;
 	transition: all 0.5s ease-in-out;
 }
 .icon_box {
@@ -4544,8 +4545,13 @@ accordion
 /*===================================*
 11. CONTACT SECTION
 *===================================*/
+#contact{
+	background-color: #5e53d4;
+	background-size: cover;
+	background-image: url(../assets/token_bg.png);
+ }
 #contact h2{
-	color: #6000b5;
+	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 60px;
 	line-height: 50px;
@@ -4554,8 +4560,15 @@ accordion
 	text-transform: uppercase;
 	margin-bottom: 70px;
 }
-.title_default_light h4, .title_default_dark h4{
-	font-size: 30px;
+#contact h4{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	text-align: left;
+	line-height: 50px;
+	letter-spacing: -2px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 70px;
 }
 .contact_section {
 	overflow: hidden;
