@@ -100,10 +100,7 @@
 	})
 	})
 	
-	//Language Select Dropdown
-	$(document).ready(function() {
-	$("#lng_select,#doc_select").msDropdown();
-	})
+
    
 	/*===================================*
 	04. BACKGROUND ANIMATION JS
@@ -351,38 +348,6 @@
 		type: 'iframe'
 	});
 
-	/*===================================*
-	10. CONTACT FORM JS
-	*===================================*/
-	$("#submitButton").on("click", function(event) {
-	    event.preventDefault();
-	    var mydata = $("form").serialize();
-	    $.ajax({
-	        type: "POST",
-	        dataType: "json",
-	        url: "contact.php",
-	        data: mydata,
-	        success: function(data) {
-	            if (data.type === "error") {
-	                $("#alert-msg").removeClass("alert-msg-success");
-	                $("#alert-msg").addClass("alert-msg-failure");
-	            } else {
-	                $("#alert-msg").addClass("alert-msg-success");
-	                $("#alert-msg").removeClass("alert-msg-failure");
-	                $("#first-name").val("Enter Name");
-	                $("#email").val("Enter Email");
-	                $("#subject").val("Enter Subject");
-	                $("#description").val("Enter Message");
-
-	            }
-	            $("#alert-msg").html(data.msg);
-	            $("#alert-msg").show();
-	        },
-	        error: function(xhr, textStatus) {
-	            alert(textStatus);
-	        }
-	    });
-	});
 
 	/*===================================*
 	11. SCROLLUP JS
@@ -457,27 +422,6 @@
 		});
 	});
 
-	/*===================================*
-	15. COLOR SWITCHHER JS
-	*===================================*/
-	$(".color-switch").on("click", "button", function() {
-
-		$(this).addClass("active").siblings().removeClass("active");
-		$("#layoutstyle").attr("href", "src/assets/color/" + $(this).val() + ".css");
-
-	});
-
-	$(".icon").on("click", function() {
-		$(".color-switch").toggleClass("switch-active");
-		$(this).toggleClass("switch-active");
-	});
-
-	$(function() {
-		$('#doc_select').change(function(){
-			$('.document_tab .tab-pane').removeClass('show active');
-			$('#' + $(this).val()).addClass('show active');
-		});
-	});
 
 })(jQuery);
 

@@ -9,6 +9,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="STA">
+    <!-- Latest jQuery -->
+    <script src="src/libs/jquery-1.12.4.min.js"></script>
     <!-- SITE TITLE -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,700,800,900&amp;subset=cyrillic" rel="stylesheet">
 <!-- SITE TITLE -->
@@ -35,6 +37,9 @@
 <!-- Color CSS -->
 <link id="layoutstyle" rel="stylesheet" href="src/libs/theme.css">
 
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+
+
 <body class="v_blue_light loaded" data-spy="scroll" data-offset="110"><div class="parallax-mirror" style="visibility: hidden; z-index: 1; position: fixed; top: 819.141px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 467px; width: 1440px;"><img class="parallax-slider" src="src/assets/footer_bg.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 1134px; width: 1440px; max-width: none; top: -734.312px;"></div><div class="parallax-mirror" style="visibility: hidden; z-index: -100; position: fixed; top: 637.141px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 741px; width: 1440px;"><img class="parallax-slider" src="src/assets/contact_bg.png" style="transform: translate3d(0px, 0px, 0px); position: absolute; left: 0px; height: 922px; width: 1440px; max-width: none; top: -567.713px;"></div>
 
 <!-- START LOADER -->
@@ -55,37 +60,36 @@
 <header class="header_wrap fixed-top">
 	<div class="container-fluid">
 		<nav class="navbar navbar-expand-lg"> 
-			<a class="navbar-brand page-scroll animation animated fadeInDown" href="" data-animation="fadeInDown" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">
+			<a class="navbar-brand page-scroll animation wow fadeInDown" href="" data-animation="fadeInDown" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">
             	<!--<img class="logo_light" src="src/assets/logo.png" alt="logo">-->
                 <!--<img class="logo_dark" src="src/assets/logo_dark.png" alt="logo">-->
             </a>
-            <button class="navbar-toggler animation animated fadeInDown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-animation="fadeInDown" data-animation-delay="1.1s" style="animation-delay: 1.1s; opacity: 1;"> 
+            <button class="navbar-toggler animation wow fadeInDown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-animation="fadeInDown" data-animation-delay="1.1s" style="animation-delay: 1.1s; opacity: 1;"> 
                 <span class="ion-android-menu"></span> 
             </button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.1s" style="animation-delay: 1.2s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">Home</a></li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.2s" style="animation-delay: 1.2s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">About</a></li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.3s" style="animation-delay: 1.3s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">Why Choose</a></li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">Features</a></li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.5s" style="animation-delay: 1.5s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">Projects</a></li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.7s" style="animation-delay: 1.7s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">For holders</a></li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.6s" style="animation-delay: 1.6s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">For startups</a></li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.6s" style="animation-delay: 1.6s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">Team</a></li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.7s" style="animation-delay: 1.7s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">FAQ</a></li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.8s" style="animation-delay: 1.8s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="">Contact</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.1s" style="animation-delay: 1.2s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="#home_section">Home</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.2s" style="animation-delay: 1.2s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="#about">About</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.3s" style="animation-delay: 1.3s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="#offering">Offering</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="#service">Features</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.5s" style="animation-delay: 1.5s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="#projects">Projects</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.6s" style="animation-delay: 1.6s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="#investors">Invest</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.7s" style="animation-delay: 1.7s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="#startups">Issue</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.8s" style="animation-delay: 1.8s; opacity: 1;"><a class="nav-link page-scroll nav_item" href="#faq">FAQ</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.9s" style="animation-delay: 1.9s; opacity: 1;"><a class="nav-link page-scroll nav_item" download href="src/assets/fn.png">Docs</a></li>
                 </ul>
                 <ul class="navbar-nav nav_btn align-items-center">
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="1.9s" style="animation-delay: 1.9s; opacity: 1;">
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.9s" style="animation-delay: 1.9s; opacity: 1;">
                         <div class="lng_dropdown">
                           <div class="ddOutOfVision" id="lng_select_msddHolder" style="height: 0px; overflow: hidden; position: absolute;"><select name="countries" id="lng_select">
-                            <option value="en" data-image="src/assets/eng.png" data-title="English">EN</option>
-                            <option value="fn" data-image="src/assets/fn.png" data-title="France">FN</option>
-                            <option value="us" data-image="src/assets/us.png" data-title="United States">US</option>
+                            <option value="en" data-image="src/assets/eng.png" data-reload="English">EN</option>
+                            <option value="fn" data-image="src/assets/fn.png" data-reload="France">FN</option>
+                            <option value="us" data-image="src/assets/us.png" data-reload="United States">US</option>
                           </select></div><div class="dd ddcommon borderRadius" id="lng_select_msdd" style="width: 46px;"><div class="ddTitle borderRadiusTp"><span class="divider"></span><span class="arrow arrowoff"></span><span class="ddTitleText " id="lng_select_title"><img src="src/assets/eng.png" class="fnone"><span class="ddlabel">EN</span><span class="description" style="display: none;"></span></span></div><input id="lng_select_titleText" type="text" autocomplete="off" class="text shadow borderRadius" style="display: none;"><div class="ddChild ddchild_ border shadow" id="lng_select_child" style="z-index: 9999; display: none; position: absolute;"><ul><li class="enabled _msddli_ selected" title="English"><img src="src/assets/eng.png" class="fnone"><span class="ddlabel">EN</span><div class="clear"></div></li><li class="enabled _msddli_" title="France"><img src="src/assets/fn.png" class="fnone"><span class="ddlabel">FN</span><div class="clear"></div></li><li class="enabled _msddli_" title="United States"><img src="src/assets/us.png" class="fnone"><span class="ddlabel">US</span><div class="clear"></div></li></ul></div></div>
                         </div>
                     </li>
-                    <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;"><a class="btn btn-default btn-radius nav_item" href="">Login</a></li>
+                    <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;"><a class="btn btn-default btn-radius nav_item" href="">Login</a></li>
                 </ul>
 			</div>
 		</nav>
@@ -100,19 +104,24 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12 order-lg-first">
                 <div class="banner_text text_md_center res_md_mb_30 res_xs_mb_20">
-                    <h1 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1.1s" style="animation-delay: 1.1s; opacity: 1;">Security Token Accelerator</h1>
-                    <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1.3s" style="animation-delay: 1.3s; opacity: 1;">End-to-end platform for compliant issuance and investment in tokenized assets of smart
-                        sustainable city innovations with multi-level investors protection.
+                    <h1 data-localize="header_title" data-l10n-id="start-banner-title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1.1s" style="animation-delay: 1.1s; opacity: 1;"></h1>
+                    <p data-localize="header_desc" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1.3s" style="animation-delay: 1.3s; opacity: 1;">
                     </p>
-                    <div class="btn_group animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;"> 
-                        <a href="" class="btn btn-default btn-radius page-scroll">For investors <i class="ion-ios-arrow-forward"></i></a>
-                        <a href="" class="btn btn-border-white btn-radius">For startups <i class="ion-ios-arrow-forward"></i></a>
+                    <div class="btn_group animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;"> 
+                        <a data-localize="header_button_investor" href="#investors" class="btn btn-default btn-radius page-scroll">For investors <i class="ion-ios-arrow-forward"></i></a>
+                        <a data-localize="header_button_startup" href="#startups" class="btn btn-border-white btn-radius">For startups <i class="ion-ios-arrow-forward"></i></a>
+                        <div class="row d-flex text-center">
+                            <div class="offset-2 pt-3">
+                                 <a data-localize="header_button_whitepapper" href="#contact" >Request Whitepaper <i class="ion-ios-arrow-forward"></i></a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 order-first">
-                <div class="banner_image_right banner_img animation animated fadeInRight" data-animation-delay="1.5s" data-animation="fadeInRight" style="animation-delay: 1.5s; opacity: 1;"> 
-                    <img alt="banner_vector3" src="src/assets/banner_img3.png">
+                <div class="banner_image_right banner_img animation wow fadeInRight" data-animation-delay="1.5s" data-animation="fadeInRight" style="animation-delay: 1.5s; opacity: 1;"> 
+                    <img alt="banner_vector3" src="src/assets/main-bg.png">
                 </div>
           	</div>
         </div>
@@ -129,78 +138,77 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12">
             	<div class="text-center res_md_mb_30 res_sm_mb_20">
-                	<img class="animation animated zoomIn" data-animation="zoomIn" data-animation-delay="0.2s" src="src/assets/about_img4.png" alt="aboutimg4" style="animation-delay: 0.2s; opacity: 1;">
+                	<img class="animation wow zoomIn" data-animation="zoomIn" data-animation-delay="0.2s" src="src/assets/about_img4.png" alt="aboutimg4" style="animation-delay: 0.2s; opacity: 1;">
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 text_md_center">
                 <div class="title_purple_dark">
-                  <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Security Token Accelerator</h4>
-                  <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">We aim at connecting best blockchain, IoT, Artificial Intelligence, cleantech, biotech, projects with capital via their equity tokenization and offering to accredited investors.</p>
-                  <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">We accelerate compliant digital investment flows into the most talented teams and impactful technologies, enabling the growth of global smart sustainable cities ecosystem.</p>
-                    <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">As a result of professional due diligence, most promising projects are selected for <b>security token acceleration program</b>, while <b>security tokenization-as-a-service</b> is available for everyone.</p>
+                  <h4 data-localize="about_title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Security Token Accelerator</h4>
+                  <p data-localize="about_desc1" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">We aim at connecting best blockchain, IoT, Artificial Intelligence, cleantech, biotech, projects with capital via their equity tokenization and offering to accredited investors.</p>
+                  <p data-localize="about_desc2" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">We accelerate compliant digital investment flows into the most talented teams and impactful technologies, enabling the growth of global smart sustainable cities ecosystem.</p>
+                    <p data-localize="about_desc3" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">As a result of professional due diligence, most promising projects are selected for <b>security token acceleration program</b>, while <b>security tokenization-as-a-service</b> is available for everyone.</p>
 
                 </div>
-                <a href="" class="btn btn-default btn-radius  animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">Let's Start <i class="ion-ios-arrow-forward"></i></a>
+                <a data-localize="about_btn" href="https://t.me/stoaccelerator" class="btn btn-default btn-radius  animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">Let's Start <i class="ion-ios-arrow-forward"></i></a>
             </div>
         </div>
     </div>
 </section>
 <!-- END SECTION ABOUT US -->
 <!-- START SECTION DIGITAL NETWORK -->
-<section id="whychoose" class="blue_bg">
+<section id="offering" class="blue_bg">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="title_default_light">
-                    <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Security Token Offering</h4>
-                    <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">STA has great features that  make it the best place. Odit, itaque, deserunt corporis vero ipsum eius odio natus ullam quia eos.</p>
+                <div class="title_default_light mb-5">
+                    <h4 data-localize="why_choose_title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Security Token Offering</h4>
                 </div>
                 <ul class="list_info list_info_half list_none">
-                    <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
+                    <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
                         <div class="list_icon">
                             <i class="fa fa-briefcase"></i>
                         </div>
                         <div class="list_content">
-                            <h6>Compliant with national securities and KYC/AML regulations</h6>
+                            <h6 data-localize="why_choose_plus1">Compliant with national securities and KYC/AML regulations</h6>
                         </div>
                     </li>
-                    <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
+                    <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
                         <div class="list_icon">
                             <i class="fa fa-line-chart"></i>
                         </div>
                         <div class="list_content">
-                            <h6>Represent equity, debt, investment contracts</h6>
+                            <h6 data-localize="why_choose_plus2">Represent equity, debt, investment contracts</h6>
                         </div>
                     </li>
-                    <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.7s" style="animation-delay: 0.7s; opacity: 1;">
+                    <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.7s" style="animation-delay: 0.7s; opacity: 1;">
                         <div class="list_icon">
                             <i class="fa fa-mobile"></i>
                         </div>
                         <div class="list_content">
-                            <h6>24/7 access to market without middlemen</h6>
+                            <h6 data-localize="why_choose_plus3">24/7 access to market without middlemen</h6>
                         </div>
                     </li>
-                    <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                    <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
                         <div class="list_icon">
                             <i class="fa fa-database"></i>
                         </div>
                         <div class="list_content">
-                            <h6>Voting rights and liquidation preferences</h6>
+                            <h6 data-localize="why_choose_plus4">Voting rights and liquidation preferences</h6>
                         </div>
                     </li>
-                    <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                    <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
                         <div class="list_icon">
                             <i class="fa fa-database"></i>
                         </div>
                         <div class="list_content">
-                            <h6>Enabling new exit opportunity and liquidity for VC market</h6>
+                            <h6 data-localize="why_choose_plus5">Enabling new exit opportunity and liquidity for VC market</h6>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="text-center res_md_mt_50 res_sm_mt_20">
-                    <img class="animation animated zoomIn" data-animation="zoomIn" data-animation-delay="0.2s" src="src/assets/global_network.png" alt="global_network" style="animation-delay: 0.2s; opacity: 1;">
+                    <img class="animation wow zoomIn" data-animation="zoomIn" data-animation-delay="0.2s" src="src/assets/third-bg.png" alt="global_network" style="animation-delay: 0.2s; opacity: 1;">
                 </div>
             </div>
         </div>
@@ -214,54 +222,52 @@
         <div class="row align-items">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="title_purple_dark">
-                    <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Unique Features</h4>
-                    <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">Tokenized equity of smart sustainable city projects, focused on Asia-Pacific region and developing countries markets
-                    </p>
+                    <h4 data-localize="features_title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Unique Features</h4>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="box_wrapper animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                <div class="box_wrapper animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
                     <div class="icon_box">
                         <img src="src/assets/icon.png" width="100" height="100" alt="mobile-app">
                     </div>
                     <div class="box_desc">
-                        <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Clear market focus </h4>
-                        <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">Tokenized equity of smart sustainable city projects, focused on Asia-Pacific region and developing countries markets</p>
+                        <h4 data-localize="features_card_1_title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Clear market focus </h4>
+                        <p data-localize="features_card_1_desc" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">Tokenized equity of smart sustainable city projects, focused on Asia-Pacific region and developing countries markets</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="box_wrapper animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
+                <div class="box_wrapper animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
                     <div class="icon_box">
                         <img src="src/assets/icon.png" width="100" height="100" alt="exchange-service">
                     </div>
                     <div class="box_desc">
-                        <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Multi-layer investors protection</h4>
-                        <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">Full compliance with international securities regulations, VC due diligence, DAICO framework, cybersecurity</p>
+                        <h4 data-localize="features_card_2_title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Multi-layer investors protection</h4>
+                        <p data-localize="features_card_2_desc" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">Full compliance with international securities regulations, VC due diligence, DAICO framework, cybersecurity</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="box_wrapper animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                <div class="box_wrapper animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
                     <div class="icon_box">
                         <img src="src/assets/icon.png" width="100" height="100" alt="investment-projects">
                     </div>
                     <div class="box_desc">
-                        <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Reduced currency risks and easy investment</h4>
-                        <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">Hedging currency risks and enabling fiat/crypto money transfer with in-house stable coin EVERUSD</p>
+                        <h4 data-localize="features_card_3_title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Reduced currency risks and easy investment</h4>
+                        <p data-localize="features_card_3_desc" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">Hedging currency risks and enabling fiat/crypto money transfer with in-house stable coin EVERUSD</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6  col-md-6 col-sm-12">
-                <div class="box_wrapper animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1.0s" style="animation-delay: 1s; opacity: 1;">
+                <div class="box_wrapper animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1.0s" style="animation-delay: 1s; opacity: 1;">
                     <div class="icon_box">
                         <img src="src/assets/icon.png" width="100" height="100" alt="global-system">
                     </div>
                     <div class="box_desc">
-                        <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Impact and SDG aligned investments</h4>
-                        <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">We provide unique opportunity to track impact of your investments and select projects by their alignment with SDGs</p>
+                        <h4 data-localize="features_card_4_title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Impact and SDG aligned investments</h4>
+                        <p data-localize="features_card_2_desc" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">We provide unique opportunity to track impact of your investments and select projects by their alignment with SDGs</p>
                     </div>
                 </div>
             </div>
@@ -271,47 +277,47 @@
 <!-- END SECTION SERVICES -->
 
 <!-- START SECTION WHY CHOOSE US -->
-<section id="why_choose">
+<section id="projects">
     <div class="container">
         <div class="row align-items-end">
             <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="title_default_pink">
-                    <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Our latest projects</h4>
+                    <h2 data-localize="projects_title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Our latest projects</h2>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="radius_box text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
+                <div class="radius_box text-center animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
                     <img class='logo-companies' src="src/assets/zenome.png" alt="wc_icon1">
                     <div class="title-desc">
-                        <h4>AEROSTATE</h4>
-                        <p>Air quality management platform and worldwide API</p>
+                        <h4 data-localize="projects_aerostate_title" >AEROSTATE</h4>
+                        <p data-localize="projects_aerostate_des" >Air quality management platform and worldwide API</p>
                     </div>
-                    <a class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
+                    <a data-localize="projects_btn" class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
                 </div>
             </div>
-            <div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-12">
-                <div class="radius_box  text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">
+            <div class="col-lg-4 col-md-6  col-sm-12">
+                <div class="radius_box  text-center animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">
                     <img class='logo-companies' src="src/assets/zenome.png" alt="wc_icon3">
                     <div class="title-desc">
-                        <h4>SECURITY TOKEN ACCELERATOR</h4>
-                        <p>End-to-end platform for compliant issuance and investment in tokenized assets of smart
+                        <h4 data-localize="projects_sta_title">SECURITY TOKEN ACCELERATOR</h4>
+                        <p data-localize="projects_sta_desc">End-to-end platform for compliant issuance and investment in tokenized assets of smart
                             sustainable city innovations with multi-level investors protection.</p>
                     </div>
-                    <a class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
+                    <a data-localize="projects_btn" class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="radius_box text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                <div class="radius_box text-center animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
                     <img class='logo-companies' src="src/assets/zenome.png" alt="wc_icon2">
                     <div class="title-desc">
-                        <h4>SYMMETRA</h4>
-                        <p>Revolutionary internet-of-things
+                        <h4 data-localize="projects_symmetra_title">SYMMETRA</h4>
+                        <p data-localize="projects_symmetra_desc">Revolutionary internet-of-things
                         cloud platform for a "smart city as a
                         service" and big data analytics</p>
                     </div>
-                    <a class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
+                    <a data-localize="projects_btn" class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
                 </div>
             </div>
         </div>
@@ -319,138 +325,127 @@
 </section>
 <!-- END SECTION WHY CHOOSE US -->
 <!-- START SECTION BENEFITS FOR INVESTORS -->
-<section class="investor-area homepage-6 text-center">
+<section class="investor-area homepage-6 text-center" id="investors">
     <div class="container">
         <div class="row">
             <div class="col-md-7">
                 <div class="section-title text-left">
-                    <h2 class="wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;">Benefits for investors</h2>
+                    <h2 data-localize=investors_title" class="wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;">Benefits for investors</h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;">
-                <div class="single-token">
-                    <img src="src/assets/icon2.png" alt="">
-                    <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Exit opportunities via security token secondary market & liquidity </p>
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;">
+                <div class="single-token row">
+                    <img src="src/assets/icon2.png" class='col-5' alt="">
+                    <div class="token-meta col-7">
+                        <h4 data-localize=investors_card_1_desc>Exit opportunities via security token secondary market & liquidity </h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.6s; animation-name: fadeInUp;">
-                <div class="single-token">
-                    <img src="src/assets/icon2.png" alt="">
-                    <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Real rights for assets: ownership right, revenue share right, stake right in case of company liquidation, voting right</p>
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.6s; animation-name: fadeInUp;">
+                <div class="single-token row">
+                    <img src="src/assets/icon2.png" class='col-5' alt="">
+                    <div class="token-meta col-7">
+                        <h4 data-localize=investors_card_2_desc>Real rights for assets: ownership right, revenue share right, stake right in case of company liquidation, voting right</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".7s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeInUp;">
-                <div class="single-token">
-                    <img src="src/assets/icon2.png" alt="">
-                    <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>DAICO model and regular reporting provide transparency and investor protection</p>
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".7s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeInUp;">
+                <div class="single-token row">
+                    <img src="src/assets/icon2.png" class='col-5' alt="">
+                    <div class="token-meta col-7">
+                        <h4 data-localize=investors_card_3_desc>DAICO model and regular reporting provide transparency and investor protection</h4>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row t-mt-80">
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".8s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.8s; animation-name: fadeInUp;">
-                <div class="single-token">
-                    <img src="src/assets/icon2.png" alt="">
-                    <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Stable coin mechanism for hedging currency risks</p>
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".8s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.8s; animation-name: fadeInUp;">
+                <div class="single-token row">
+                    <img src="src/assets/icon2.png" class='col-5' alt="">
+                    <div class="token-meta col-7">
+                        <h4 data-localize=investors_card_4_desc>Stable coin mechanism for hedging currency risks</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeInUp;">
-                <div class="single-token">
-                    <img src="src/assets/icon2.png" alt="">
-                    <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Convenient portfolio monitoring instrument</p>
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeInUp;">
+                <div class="single-token row">
+                    <img src="src/assets/icon2.png" class='col-5' alt="">
+                    <div class="token-meta col-7">
+                        <h4 data-localize=investors_card_5_desc>Convenient portfolio monitoring instrument</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".99s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.99s; animation-name: fadeInUp;">
-                <div class="single-token">
-                    <img src="src/assets/icon2.png" alt="">
-                    <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Access to best tech brains and startups</p>
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".99s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.99s; animation-name: fadeInUp;">
+                <div class="single-token row">
+                    <img src="src/assets/icon2.png" class='col-5' alt="">
+                    <div class="token-meta col-7">
+                        <h4 data-localize=investors_card_6_desc>Access to best tech brains and startups</h4>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
+        <a data-localize=investors_btn class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
 
     </div>
 </section>
 <!-- END SECTION BENEFITS FOR INVESTORS -->
 <!-- START SECTION BENEFITS FOR INVESTORS -->
-<section class="client-area homepage-6">
+<section class="client-area homepage-6" id="startups">
     <div class="container text-center">
         <div class="row">
             <div class="col-md-7 text-left">
                 <div class="section-title">
-                    <h2 class="wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;">Issue tokenized equity or debt</h2>
+                    <h2 data-localize=startups_title class="wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;">Issue tokenized equity or debt</h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;">
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeInUp;">
                 <div class="single-token">
                     <img src="src/assets/icon3.png" alt="">
                     <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Affordable to startups and small businesses on early development stages</p>
+                        <h4 data-localize=startups_card_1_desc>Affordable to startups and small businesses on early development stages</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.6s; animation-name: fadeInUp;">
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.6s; animation-name: fadeInUp;">
                 <div class="single-token">
                     <img src="src/assets/icon3.png" alt="">
                     <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Choice of tokenization object</p>
+                        <h4 data-localize=startups_card_2_desc>Choice of tokenization object</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".7s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeInUp;">
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".7s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.7s; animation-name: fadeInUp;">
                 <div class="single-token">
                     <img src="src/assets/icon3.png" alt="">
                     <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Full compliance with securities regulation and reduction of legal risks</p>
+                        <h4 data-localize=startups_card_3_desc>Full compliance with securities regulation and reduction of legal risks</h4>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row t-mt-80">
-            <div class="col-md-4 offset-2 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".8s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.8s; animation-name: fadeInUp;">
+            <div class="col-md-4 offset-0 offset-lg-2 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".8s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.8s; animation-name: fadeInUp;">
                 <div class="single-token">
                     <img src="src/assets/icon3.png" alt="">
                     <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Keeping control over your company</p>
+                        <h4 data-localize=startups_card_4_desc>Keeping control over your company</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 wow  fadeInUp animated" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeInUp;">
+            <div class="col-md-4 wow  fadeInUp wow" data-wow-duration="2s" data-wow-delay=".9s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.9s; animation-name: fadeInUp;">
                 <div class="single-token">
                     <img src="src/assets/icon3.png" alt="">
                     <div class="token-meta">
-                        <h4>Lorem Ipsum</h4>
-                        <p>Access to accredited international investors</p>
+                        <h4 data-localize=startups_card_5_desc>Access to accredited international investors</h4>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
+        <a data-localize=startsups_btn class="btn btn-default btn-radius nav_item" href="">Invest<i class="ion-android-notifications-off"></i></a>
 
     </div>
 </section>
@@ -471,9 +466,13 @@
                             <img width="209" height="209" src="./Evercity_files/shadrin-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/05/shadrin-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/05/shadrin-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/05/shadrin-300x300.png 300w, https://evercity.io/wp-content/uploads/2018/05/shadrin-768x768.png 768w, https://evercity.io/wp-content/uploads/2018/05/shadrin-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/05/shadrin.png 794w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
                         <h3 class="">Alexey Shadrin</h3>
                         <h4>Co-founder &amp; CEO</h4>
-                    <p>Blockchain, Sustainability and Smart City evangelist, serial entrepreneur and international key-note speaker. As a CEO and co-founder of DAO IPCI – blockchain ecosystem for acceleration of international green finance market – and the Russian Carbon Fund, Alexey successfully promotes sustainable development in Russia and internationally for over 6 years. Member of Green Economy committee of the Digital economy and innovations Council of Eurasian Economic Cooperation Organization.</p>
-                    <div class="link">
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=1455669819" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                            <a target="_blank" href="https://www.linkedin.com/in/alexeyshadrin/" tabindex="-1"><img width="27" height="27" src="src/assets/linkedin-green.svg" alt="linkedin"></a>                        </div>
+                    <div class="team-descr">
+                        <div class="link text-left">
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=1455669819" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/fb-grey-1.svg" alt="fb"></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/alexeyshadrin/" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/linkedin-grey-1.svg" alt="linkedin"></a>
+                        </div>
+                        <p>Blockchain, Sustainability and Smart City evangelist, serial entrepreneur and international key-note speaker. As a CEO and co-founder of DAO IPCI – blockchain ecosystem for acceleration of international green finance market – and the Russian Carbon Fund, Alexey successfully promotes sustainable development in Russia and internationally for over 6 years. Member of Green Economy committee of the Digital economy and innovations Council of Eurasian Economic Cooperation Organization.</p>
+                    </div>
                 </div>
             </div>
             </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide71" aria-hidden="true">
@@ -483,9 +482,13 @@
                         <img width="209" height="209" src="./Evercity_files/avdeev-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/05/avdeev-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/05/avdeev-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/05/avdeev-300x300.png 300w, https://evercity.io/wp-content/uploads/2018/05/avdeev-768x768.png 768w, https://evercity.io/wp-content/uploads/2018/05/avdeev-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/05/avdeev.png 794w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
                     <h3 class="">Maxim Avdeev</h3>
                     <h4>Co-founder &amp; CBDO</h4>
-                <p>Founder and CEO of Qiwi Platform, Founder of fintech accelerator InspiRussia (Innopolis), former CBDO of Life.SREDA VC, Maxim is a serial entrepreneur and a prominent figure in Russian venture investment community. Member of the Open Banking working group in Russia (Fintech Assosiation Russia).</p>
-                <div class="link">
-                    <a target="_blank" href="https://www.facebook.com/mavdeev.yeah" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                            <a target="_blank" href="https://www.linkedin.com/in/mavdeev/" tabindex="-1"><img width="27" height="27" src="src/assets/linkedin-green.svg" alt="linkedin"></a>                        </div>
+                <div class="team-descr">
+                    <div class="link text-left">
+                        <a target="_blank" href="https://www.facebook.com/mavdeev.yeah" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/fb-grey-1.svg" alt="fb"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/mavdeev/" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/linkedin-grey-1.svg" alt="linkedin"></a>
+                    </div>
+                    <p>Founder and CEO of Qiwi Platform, Founder of fintech accelerator InspiRussia (Innopolis), former CBDO of Life.SREDA VC, Maxim is a serial entrepreneur and a prominent figure in Russian venture investment community. Member of the Open Banking working group in Russia (Fintech Assosiation Russia).</p>
+                </div>
                 </div>
             </div>
         </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide72" aria-hidden="true">
@@ -495,10 +498,13 @@
                         <img width="209" height="209" src="./Evercity_files/flink-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/07/flink-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/07/flink-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/07/flink-300x300.png 300w, https://evercity.io/wp-content/uploads/2018/07/flink-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/07/flink.png 333w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
                     <h3 class="">Olga Flink</h3>
                     <h4>Head of Staff</h4>
-                <p>As a COO in ID/23 and a former deputy director for Innovational development in NFK Bank (Uralsib subsidiary), Olga is multi-profile expert in product development, business processes optimisation and team management. She has rich work experience as a head of international factoring, research &amp; analytics, quality service departments.</p>
-                <div class="link">
-                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100015204186496" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                            <a target="_blank" href="https://www.linkedin.com/in/olga-flink-16816660/" tabindex="-1"><img width="27" height="27" src="src/assets/linkedin-green.svg" alt="linkedin"></a>                        </div>
-
+                 <div class="team-descr">
+                    <div class="link text-left">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100015204186496" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/fb-grey-1.svg" alt="fb"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/olga-flink-16816660/" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/linkedin-grey-1.svg" alt="linkedin"></a>
+                    </div>
+                     <p>As a COO in ID/23 and a former deputy director for Innovational development in NFK Bank (Uralsib subsidiary), Olga is multi-profile expert in product development, business processes optimisation and team management. She has rich work experience as a head of international factoring, research &amp; analytics, quality service departments.</p>
+                 </div>
                 </div>
             </div>
         </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide73" aria-hidden="true">
@@ -508,10 +514,13 @@
                         <img width="209" height="209" src="./Evercity_files/novikova-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/05/novikova-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/05/novikova-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/05/novikova-300x300.png 300w, https://evercity.io/wp-content/uploads/2018/05/novikova-768x768.png 768w, https://evercity.io/wp-content/uploads/2018/05/novikova-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/05/novikova.png 794w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
                     <h3 class="">Ekaterina Novikova</h3>
                     <h4>Head of Operations</h4>
+                <div class="team-descr">
+                 <div class="link text-left">
+                    <a target="_blank" href="https://www.facebook.com/catherina.novikova" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/fb-grey-1.svg" alt="fb"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/linkedin-grey-1.svg" alt="linkedin"></a>
+                </div>
                 <p>As a former head of project management office in Russian Carbon fund, former Custom developer in Elementaree, current adviser for MGIMO Goes Green and junior researcher in Geography Institute of Russian Academy of Sciences, Ekaterina has a 6+ years experience in managing sustainable development and smart city-related projects, analytics, modern educational technology expertise and team motivation. Winner of multiple sustainability &amp; impact awards.</p>
-                <div class="link">
-                    <a target="_blank" href="https://www.facebook.com/catherina.novikova" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                            <a target="_blank" href="https://www.linkedin.com/in/%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0" tabindex="-1"><img width="27" height="27" src="src/assets/linkedin-green.svg" alt="linkedin"></a>                        </div>
-
+                </div>
             </div>
         </div>
         </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide74" aria-hidden="true">
@@ -521,12 +530,15 @@
                         <img width="209" height="209" src="./Evercity_files/gryaznov-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/09/gryaznov-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/09/gryaznov-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/09/gryaznov-300x300.png 300w, https://evercity.io/wp-content/uploads/2018/09/gryaznov-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/09/gryaznov.png 446w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
                     <h3 class="">Alexandr Gryaznov</h3>
                     <h4>CTO</h4>
-                <p>IT and cryptology expert, developer with 10+ years experience, Alexander has lead multiple teams in international companies and founded several hi-tech startups (Veche, IZX).<br>
-                    His completed projects include computer aided design, commodity trading risk management (Aspect Enterprise Solutions), CRM and ERP systems for largest mobile operators (MTS), retail companies and banks (VTB24).<br>
-                    Founder and leader of the first academic course on Ethereum Decentralized Applications at Innopolis University.</p>
-                <div class="link">
-                    <a target="_blank" href="https://www.facebook.com/sanekgryaznov" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                            <a target="_blank" href="https://www.linkedin.com/in/sashagryaznov/" tabindex="-1"><img width="27" height="27" src="src/assets/linkedin-green.svg" alt="linkedin"></a>                        </div>
-
+                 <div class="team-descr">
+                    <div class="link text-left">
+                        <a target="_blank" href="https://www.facebook.com/sanekgryaznov" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/fb-grey-1.svg" alt="fb"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/sashagryaznov/" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/linkedin-grey-1.svg" alt="linkedin"></a>
+                    </div>
+                     <p>IT and cryptology expert, developer with 10+ years experience, Alexander has lead multiple teams in international companies and founded several hi-tech startups (Veche, IZX).<br>
+                         His completed projects include computer aided design, commodity trading risk management (Aspect Enterprise Solutions), CRM and ERP systems for largest mobile operators (MTS), retail companies and banks (VTB24).<br>
+                         Founder and leader of the first academic course on Ethereum Decentralized Applications at Innopolis University.</p>
+                 </div>
             </div>
         </div>
         </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide75" aria-hidden="true">
@@ -536,73 +548,15 @@
                         <img width="209" height="209" src="./Evercity_files/vyazemskaya-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/05/vyazemskaya-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/05/vyazemskaya-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/05/vyazemskaya-300x300.png 300w, https://evercity.io/wp-content/uploads/2018/05/vyazemskaya-768x768.png 768w, https://evercity.io/wp-content/uploads/2018/05/vyazemskaya-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/05/vyazemskaya.png 794w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
                     <h3 class="">Xenia Vyazemskaya</h3>
                     <h4>Head of Marketing</h4>
-                <p>Xenia is a Token Sales marketing and investor relations professional with 5+ years experience and wide connections network in Asia and Middle East. Her latest project Native Video Box where Xenia took part as PR director, raised $10M during iCO. Extensive experience in investor &amp; collector relations management in contemporary art field.</p>
-                <div class="link">
-                    <a target="_blank" href="https://www.facebook.com/ks.vyazemsk" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                            <a target="_blank" href="https://www.linkedin.com/in/ksenia-vyazemskaya-b774145b/" tabindex="-1"><img width="27" height="27" src="src/assets/linkedin-green.svg" alt="linkedin"></a>                        </div>
-
-            </div>
+                    <div class="team-descr">
+                         <div class="link text-left">
+                            <a target="_blank" href="https://www.facebook.com/ks.vyazemsk" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/fb-grey-1.svg" alt="fb"></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/ksenia-vyazemskaya-b774145b/" tabindex="-1"><img width="27" height="27" src="src/assets/Evercity_files/linkedin-grey-1.svg" alt="linkedin"></a>
+                        </div>
+                        <p>Xenia is a Token Sales marketing and investor relations professional with 5+ years experience and wide connections network in Asia and Middle East. Her latest project Native Video Box where Xenia took part as PR director, raised $10M during iCO. Extensive experience in investor &amp; collector relations management in contemporary art field.</p>
+                    </div>
+                </div>
         </div>
-        </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide76" aria-hidden="true">
-            <div class="team__list-item text-center">
-                <div class="person-back">
-                    <div class="img">
-                        <img width="209" height="209" src="./Evercity_files/soldatov-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/05/soldatov-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/05/soldatov-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/05/soldatov-300x300.png 300w, https://evercity.io/wp-content/uploads/2018/05/soldatov-768x768.png 768w, https://evercity.io/wp-content/uploads/2018/05/soldatov-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/05/soldatov.png 794w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
-                    <h3 class="">Denis Soldatov</h3>
-                    <h4>Tech consultant</h4>
-                <p>Founder of the Russian-speaking Ethereum community and DevOps in Parity. Denis is a member of the State Duma (parlament) Expert Council on legislative support for the development of financial technologies in Russian Federation. Crypto-enthusiast, expert in blockchain development, Soft Ware &amp; Hard Ware projects &amp; IT teams management.</p>
-                <div class="link">
-                    <a target="_blank" href="https://www.facebook.com/General.Beck?ref=br_rs" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                                                    </div>
-                </div>
-            </div>
-        </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide77" aria-hidden="true">
-            <div class="team__list-item text-center">
-                <div class="person-back">
-                    <div class="img">
-                        <img width="209" height="209" src="./Evercity_files/matyukhin-1-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/05/matyukhin-1-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/05/matyukhin-1-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/05/matyukhin-1-300x300.png 300w, https://evercity.io/wp-content/uploads/2018/05/matyukhin-1-768x768.png 768w, https://evercity.io/wp-content/uploads/2018/05/matyukhin-1-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/05/matyukhin-1.png 794w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
-                    <h3 class="">Igor Matyukhin</h3>
-                    <h4>Business Development consultant</h4>
-                <p>Presidium member of Digital economy and innovations Council of Eurasian Economic Cooperation Organization. Member of State Duma (parliament) Expert Council on legislative support for the development of financial technologies. Head of cryptocurrencies &amp; blockchain committee in National Investment Association, Igor specialises in blockchain, Soft Ware &amp; Hard Ware projects and IT teams management, project selection and project financing.</p>
-                <div class="link">
-                    <a target="_blank" href="https://www.facebook.com/matyukhin.igor" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                                                    </div>
-                </div>
-            </div>
-        </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide79" aria-hidden="true">
-            <div class="team__list-item text-center">
-                <div class="person-back">
-                    <div class="img">
-                        <img width="209" height="209" src="./Evercity_files/masha-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/07/masha-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/07/masha-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/07/masha-300x300.png 300w, https://evercity.io/wp-content/uploads/2018/07/masha-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/07/masha.png 600w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
-                    <h3 class="">Maria Vyazemskaya</h3>
-                    <h4>PR &amp; Community Manager</h4>
-                    <p>Masha is a communications specialist with 5+ years of work experience with marketing activities, events and social media campaigns for international brands in entertainment &amp; tech industries. Former project manager in Gibson Brands Entertainment Relations department, PR &amp; social media manager in Native Video Box (raised $10M during iCO). As an event manager, Masha organised and coordinated various projects with the support of Moscow city government alongside with international projects of diplomatic importance. Content creator with journalistic background.</p>
-                    <div class="link">
-                        <a target="_blank" href="https://www.facebook.com/masha.vyazemskaya" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                            <a target="_blank" href="https://www.linkedin.com/in/mariavyazemskaya" tabindex="-1"><img width="27" height="27" src="src/assets/linkedin-green.svg" alt="linkedin"></a>                        </div>
-                </div>
-            </div>
-        </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide78" aria-hidden="true">
-            <div class="team__list-item text-center">
-                <div class="person-back">
-                    <div class="img">
-                        <img width="209" height="209" src="./Evercity_files/kapustin-1-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/05/kapustin-1-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/05/kapustin-1-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/05/kapustin-1-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/05/kapustin-1.png 250w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
-                    <h3 class="">Nikolay Kapustin</h3>
-                    <h4>Development Director&nbsp;Asia Pacific Market</h4>
-
-                    <p>International relations and IT specialist with a focus on Asian markets. Nikolay is an advanced speaker with 5+ years’ experience in community-management in China mainland, Hong Kong, Macao, Taiwan (Genexi). MGIMO Chinese Club President. </p>
-                    <div class="link">
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100000982396780" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                            <a target="_blank" href="https://www.linkedin.com/in/nikolay-kapustin-707560162/" tabindex="-1"><img width="27" height="27" src="src/assets/linkedin-green.svg" alt="linkedin"></a>                        </div>
-                </div>
-            </div>
-        </div><div class="team__list-person col-lg-4 col-md-6 col-12" style="" tabindex="-1" role="option" aria-describedby="slick-slide710" aria-hidden="true">
-            <div class="team__list-item text-center">
-                <div class="person-back">
-                    <div class="img">
-                        <img width="209" height="209" src="./Evercity_files/VladimirNaumov-209x209.png" class="attachment-team-thumb size-team-thumb wp-post-image" alt="" srcset="https://evercity.io/wp-content/uploads/2018/06/VladimirNaumov-209x209.png 209w, https://evercity.io/wp-content/uploads/2018/06/VladimirNaumov-150x150.png 150w, https://evercity.io/wp-content/uploads/2018/06/VladimirNaumov-162x162.png 162w, https://evercity.io/wp-content/uploads/2018/06/VladimirNaumov.png 250w" sizes="(max-width: 209px) 100vw, 209px">                            </div>
-                    <h3 class="">Vladimir Naumov</h3>
-                    <h4>Project Manager, Biotech Leader</h4>
-                    <p>Chief Scientific officer of Zenome (decentralised marketplace of genomic data), Head of transnational bioinformatics laboratory with 8+ years in biotech experience. Vladimir worked on various projects for iBinom, GERO, KsiValue.</p>
-                    <div class="link">
-                        <a target="_blank" href="https://www.facebook.com/vovalive" tabindex="-1"><img width="27" height="27" src="src/assets/fb-green.svg" alt="fb"></a>                            <a target="_blank" href="https://www.linkedin.com/in/vladimir-naumov-8285a25b/" tabindex="-1"><img width="27" height="27" src="src/assets/linkedin-green.svg" alt="linkedin"></a>                        </div>
-                </div>
-            </div>
         </div>
         </div>
     </div>
@@ -614,9 +568,7 @@
         <div class="row text-center">
             <div class="col-12">
                 <div class="section-title text-left">
-                    <h2 class="">Project news</h2>
-                    <p class=" ">When looking at its layout. The point of using Lorem Ipsum <br>
-                        is that it has a more-or-less normal distribution</p>
+                    <h2 class="mb-5">Project news</h2>
                 </div>
             </div>
         </div>
@@ -643,129 +595,127 @@
         <div class="row text-center">
             <div class="col-7">
                 <div class="section-title text-left">
-                    <h2 class="">Frequently Asked Question</h2>
-                    <p class=" ">When looking at its layout. The point of using Lorem Ipsum <br>
-                        is that it has a more-or-less normal distribution</p>
+                    <h2 data-localize=FAQ_title class="">Frequently Asked Question</h2>
                 </div>
             </div>
         </div><!--section title-->
         <div class="row">
             <div class="col-md-6 col-gap">
-                <div class="accordion " id="accordion-1">
+                <div class="accordion wow fadeInUp " id="accordion-1">
                     <div class="card">
                         <div class="card-header">
                             <h5>
-                                <a class="collapsed" data-toggle="collapse" data-target="#collapse-1-1" aria-expanded="false">
+                                <a data-localize=FAQ_card_1_title class="collapsed" data-toggle="collapse" data-target="#collapse-1-1" aria-expanded="false">
                                     What is ICO Trade?
                                 </a>
                             </h5>
                         </div>
                         <div id="collapse-1-1" class="collapse" data-parent="#accordion-1" style="">
                             <div class="card-body pt-0">
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                                <p data-localize=FAQ_card_1_desc>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header">
                             <h5>
-                                <a class="collapsed" data-toggle="collapse" data-target="#collapse-1-2">
+                                <a data-localize=FAQ_card_2_title class="collapsed" data-toggle="collapse" data-target="#collapse-1-2">
                                     What are token holder benifits?
                                 </a>
                             </h5>
                         </div>
                         <div id="collapse-1-2" class="collapse" data-parent="#accordion-1">
                             <div class="card-body pt-0">
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                                <p data-localize=FAQ_card_2_desc>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header">
                             <h5>
-                                <a class="collapsed" data-toggle="collapse" data-target="#collapse-1-3">
+                                <a data-localize=FAQ_card_3_title class="collapsed" data-toggle="collapse" data-target="#collapse-1-3">
                                     What is Leverage?
                                 </a>
                             </h5>
                         </div>
                         <div id="collapse-1-3" class="collapse" data-parent="#accordion-1">
                             <div class="card-body pt-0">
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                                <p data-localize=FAQ_card_3_desc>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header">
                             <h5>
-                                <a class="collapsed" data-toggle="collapse" data-target="#collapse-1-4">
+                                <a data-localize=FAQ_card_4_title class="collapsed" data-toggle="collapse" data-target="#collapse-1-4">
                                     What is cryptocurrency?
                                 </a>
                             </h5>
                         </div>
                         <div id="collapse-1-4" class="collapse" data-parent="#accordion-1">
                             <div class="card-body pt-0">
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                                <p data-localize=FAQ_card_4_desc>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-gap">
+            <div class="col-md-6 col-gap wow fadeInUp">
 
                 <div class="accordion " id="accordion-2">
                     <div class="card">
                         <div class="card-header">
                             <h5>
-                                <a class="collapsed" data-toggle="collapse" data-target="#collapse-2-1">
+                                <a data-localize=FAQ_card_5_title class="collapsed" data-toggle="collapse" data-target="#collapse-2-1">
                                     How can i Contribute to the trade?
                                 </a>
                             </h5>
                         </div>
                         <div id="collapse-2-1" class="collapse" data-parent="#accordion-2">
                             <div class="card-body pt-0">
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                                <p data-localize=FAQ_card_5_desc>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header">
                             <h5>
-                                <a class="collapsed" data-toggle="collapse" data-target="#collapse-2-2">
+                                <a data-localize=FAQ_card_6_title class="collapsed" data-toggle="collapse" data-target="#collapse-2-2">
                                     How can i deposite currency?
                                 </a>
                             </h5>
                         </div>
                         <div id="collapse-2-2" class="collapse" data-parent="#accordion-2">
                             <div class="card-body pt-0">
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                                <p data-localize=FAQ_card_6_desc>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header">
                             <h5>
-                                <a class="collapsed" data-toggle="collapse" data-target="#collapse-2-3">
+                                <a data-localize=FAQ_card_7_title class="collapsed" data-toggle="collapse" data-target="#collapse-2-3">
                                     How can I withdraw currency?
                                 </a>
                             </h5>
                         </div>
                         <div id="collapse-2-3" class="collapse" data-parent="#accordion-2">
                             <div class="card-body pt-0">
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                                <p data-localize=FAQ_card_7_desc>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-header">
                             <h5>
-                                <a class="collapsed" data-toggle="collapse" data-target="#collapse-2-4">
+                                <a data-localize=FAQ_card_8_title class="collapsed" data-toggle="collapse" data-target="#collapse-2-4">
                                     Is there any learning curve for begginers?
                                 </a>
                             </h5>
                         </div>
                         <div id="collapse-2-4" class="collapse" data-parent="#accordion-2">
                             <div class="card-body pt-0">
-                                <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
+                                <p data-localize=FAQ_card_8_desc>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam.</p>
                             </div>
                         </div>
                     </div>
@@ -783,50 +733,60 @@
         <div class="row text-center">
             <div class="col-12">
                 <div class="section-title text-left">
-                    <h2 class="">Contacts</h2>
+                    <h2  data-localize=Contacts_title class="">Contacts</h2>
                 </div>
             </div>
         <div class="row">
             <div class="col-lg-6 col-md-12 pr-0 res_md_pr_15">
-                <div class="blue_light_bg contact_box animation animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="0.1s" style="animation-delay: 0.1s; opacity: 1;">
-                    <div class="title_default_light title_border">
-                        <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Contact With Us</h4>
-                        <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">Our office is located in a beautiful building and garden and fast growing city.</p>
+                <div class=" contact_box animation wow fadeInLeft" data-animation="fadeInLeft" data-animation-delay="0.1s" style="animation-delay: 0.1s; opacity: 1;">
+                    <div class="title_default_light">
+                        <h4 data-localize=Contacts_card_1_title class="text-center animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Contact With Us</h4>
+                        <p data-localize=Contacts_card_1_desc class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">Our office is located in a beautiful building and garden and fast growing city.</p>
                     </div>
-                    <div class="contct_follow large_space">
-                        <span class="text-uppercase animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Follow Us</span>
+                    <div class="row d-flex justify-content-center large_space">
+                        <div class="col-5 ">
+                            <img class="contact-image" src="src/assets/medium-logo.png">
+                            <p>Inspiring articles by our professional experts</p>
+                        </div>
+                        <div class="col-5">
+                            <img class="contact-image" src="src/assets/telegram-logo.png">
+                            <p>Latest industry news and heated discussions</p>
+                        </div>
+                    </div>
+                    <div class="contct_follow mt-5">
+                        <span data-localize=Contacts_follow_us class="text-center text-uppercase animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Follow Us</span>
                         <ul class="list_none social_icon">
-                            <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;"><a href=""><i class=" fa fa-facebook"></i></a></li>
-                            <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;"><a href=""><i class=" fa fa-twitter"></i></a></li>
-                            <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;"><a href=""><i class=" fa fa-google-plus"></i></a></li>
-                            <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.7s" style="animation-delay: 0.7s; opacity: 1;"><a href=""><i class=" fa fa-pinterest"></i></a></li>
-                            <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;"><a href=""><i class=" fa fa-linkedin"></i></a></li>
+                            <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;"><a href=""><i class=" fa fa-facebook"></i></a></li>
+                            <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;"><a href=""><i class=" fa fa-twitter"></i></a></li>
+                            <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;"><a href=""><i class=" fa fa-google-plus"></i></a></li>
+                            <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.7s" style="animation-delay: 0.7s; opacity: 1;"><a href=""><i class=" fa fa-pinterest"></i></a></li>
+                            <li class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;"><a href=""><i class=" fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 pl-0 res_md_pl_15">
-                <div class="blue_lightdark_bg contact_box animation animated fadeInRight" data-animation="fadeInRight" data-animation-delay="0.1s" style="animation-delay: 0.1s; opacity: 1;">
+            <div class="col-lg-6 col-md-12 pl-0 res_md_pl_15 right_form">
+                <div class="blue_lightdark_bg contact_box animation wow fadeInRight" data-animation="fadeInRight" data-animation-delay="0.1s" style="animation-delay: 0.1s; opacity: 1;">
                     <div class="title_default_light title_border">
-                        <h4 class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Leave a Message</h4>
+                        <h4 data-localize=Contacts_card_2_title class="text-center animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">Leave a Message</h4>
                     </div>
                     <form method="post" name="enq" class="form_field">
                         <div class="row">
-                            <div class="form-group col-md-12 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
+                            <div class="form-group col-md-12 animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
                                 <input type="text" required="required" placeholder="Enter Name *" id="first-name" class="form-control" name="name">
                             </div>
-                            <div class="form-group col-md-12 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
+                            <div class="form-group col-md-12 animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
                                 <input type="email" required="required" placeholder="Enter Email *" id="email" class="form-control" name="email">
                             </div>
-                            <div class="form-group col-md-12 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                            <div class="form-group col-md-12 animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
                                 <input type="text" required="required" placeholder="Enter Subject" id="subject" class="form-control" name="subject">
                             </div>
-                            <div class="form-group col-md-12 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">
+                            <div class="form-group col-md-12 animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">
                                 <textarea required="required" placeholder="Message *" id="description" class="form-control" name="message" rows="2"></textarea>
                             </div>
-                            <div class="col-md-12 text-center animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1.2s" style="animation-delay: 1.2s; opacity: 1;">
-                                <button type="submit" title="Submit Your Message!" class="btn btn-default btn-radius" id="submitButton" name="submit" value="Submit">Submit <i class="ion-ios-arrow-thin-right"></i></button>
-                            </div>
+                            <div class="col-md-12 text-center animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1.2s" style="animation-delay: 1.2s; opacity: 1;">
+                                <button data-localize=Contacts_btn type="submit" title="Submit Your Message!" class="btn btn-default btn-radius" id="submitButton" name="submit" value="Submit">Submit <i class="ion-ios-arrow-thin-right"></i></button>
+                               </div>
                             <div class="col-md-12">
                                 <div id="alert-msg" class="alert-msg text-center"></div>
                             </div>
@@ -844,29 +804,37 @@
     <div class="primary-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 ">
+                <div class="col-md-6 ">
                     <h4 class="text-uppercase">Security Token Accelerator</h4>
-                    <p>Subscribe to our newsletter to receive news, updates, free stuff and new releases by email. We don't do spam.</p>
+                    <p>Evercity PTE LTD 1 George St #10-01 049145 Singapore</p>
                     <p class="copyright">© Copyright 2018 Security Token Accelerator, Inc.™</p>
                 </div>
-                <div class="col-md-4 mb-md-0 mb-3 ">
-                    <h6 class="text-uppercase">Resources</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="javascript:;">Free schedules</a></li>
-                        <li><a href="javascript:;">terms &amp; privacy</a></li>
-                        <li><a href="javascript:;">api reference</a></li>
-                        <li><a href="javascript:;">help desk</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 ">
-                    <h6 class="text-uppercase">About &amp; Contacts</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="javascript:;">Our Vision</a></li>
-                        <li><a href="javascript:;">Features</a></li>
-                        <li><a href="javascript:;">About Us</a></li>
-                        <li><a href="javascript:;">Contact Us</a></li>
-                    </ul>
-                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <h6 class="text-uppercase col-12">Resources</h6>
+                        <div class="col-4 mb-md-0 ">
+                            <ul class="list-unstyled">
+                                <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.1s" style="animation-delay: 1.2s; opacity: 1;"><a class="page-scroll" href="#home_section">Home</a></li>
+                                <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.2s" style="animation-delay: 1.2s; opacity: 1;"><a class="page-scroll" href="#about">About</a></li>
+                                <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.3s" style="animation-delay: 1.3s; opacity: 1;"><a class="page-scroll" href="#offering">Offering</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-4 ">
+                            <ul class="list-unstyled">
+                                <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;"><a class="page-scroll" href="#service">Features</a></li>
+                                <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.5s" style="animation-delay: 1.5s; opacity: 1;"><a class="page-scroll" href="#projects">Projects</a></li>
+                                <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.6s" style="animation-delay: 1.6s; opacity: 1;"><a class="page-scroll" href="#investors">Invest</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4 ">
+                            <ul class="list-unstyled">
+                                <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.7s" style="animation-delay: 1.7s; opacity: 1;"><a class="page-scroll" href="#startups">Issue</a></li>
+                                <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.8s" style="animation-delay: 1.8s; opacity: 1;"><a class="page-scroll" href="#faq">FAQ</a></li>
+                                <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.9s" style="animation-delay: 1.9s; opacity: 1;"><a class="page-scroll" download href="src/assets/fn.png">Docs</a></li>
+                            </ul>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -906,9 +874,6 @@
 <!--footer end-->
 
 <a href="" class="scrollup btn-default" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
-
-<!-- Latest jQuery --> 
-<script src="src/libs/jquery-1.12.4.min.js"></script>
 <!-- Latest compiled and minified Bootstrap --> 
 <script src="src/libs/bootstrap.min.js"></script>
 <!-- magnific-popup min js  --> 
@@ -936,16 +901,30 @@
 </script>
 <!-- scripts js --> 
 <script src="src/js/scripts.js"></script>
+<script src="src/libs/jquery.localize.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+    $(function(){
+        var locale = 'en';
+        var opts = { language: locale, pathPrefix: "src/locales/", skipLanguage: "en-US" };
+        $("[data-localize]").localize("local", opts)
+    })
+
+</script>
 <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
 <script>
     $(document).ready(function(){
+        //Language Select Dropdown
+        $(document).ready(function() {
+            $("#lng_select,#doc_select").msDropdown();
+        })
+
         const url = 'https://medium.com/feed/evercity-blog';
         feednami.load(url)
             .then(feed => {
                 var entries = feed.entries;
                 for(var i = 0; i < entries.length; i++){
                     var entry = entries[i];
-                    var newsCard = '<div class="blog_item animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">\n' +
+                    var newsCard = '<div class="blog_item animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">\n' +
                         '                            <div class="blog_img">\n' +
                         '                                <a href="">\n' +
                         '                                    <img src="https://cdn-images-1.medium.com/max/800/1*uLuWzCXfq2rt1t_TkuLB8A.png" alt="blog_small_img1">\n' +
@@ -958,8 +937,6 @@
                         '                            </div>\n' +
                         '                        </div>';
                     $('.news-card-' + i).append(newsCard);
-                    console.log(entry.title);
-                    console.log(entry.image);
                 }
                     // the first 120 characters of the entry
             })
