@@ -54,18 +54,18 @@
     <div class="loader-section section-right"></div>
 
 </div>
-<!-- END LOADER --> 
+<!-- END LOADER -->
 
 <!-- START HEADER -->
 <header class="header_wrap fixed-top">
 	<div class="container-fluid">
-		<nav class="navbar navbar-expand-lg"> 
+		<nav class="navbar navbar-expand-lg">
 			<a class="navbar-brand page-scroll animation wow fadeInDown" href="" data-animation="fadeInDown" data-animation-delay="1s" style="animation-delay: 1s; opacity: 1;">
             	<!--<img class="logo_light" src="src/assets/logo.png" alt="logo">-->
                 <!--<img class="logo_dark" src="src/assets/logo_dark.png" alt="logo">-->
             </a>
-            <button class="navbar-toggler animation wow fadeInDown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-animation="fadeInDown" data-animation-delay="1.1s" style="animation-delay: 1.1s; opacity: 1;"> 
-                <span class="ion-android-menu"></span> 
+            <button class="navbar-toggler animation wow fadeInDown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-animation="fadeInDown" data-animation-delay="1.1s" style="animation-delay: 1.1s; opacity: 1;">
+                <span class="ion-android-menu"></span>
             </button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
@@ -82,20 +82,63 @@
                 <ul class="navbar-nav nav_btn align-items-center">
                     <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="1.9s" style="animation-delay: 1.9s; opacity: 1;">
                         <div class="lng_dropdown">
-                          <div class="ddOutOfVision" id="lng_select_msddHolder" style="height: 0px; overflow: hidden; position: absolute;"><select name="countries" id="lng_select">
-                            <option value="en" data-image="src/assets/eng.png" data-reload="English">EN</option>
-                            <option value="fn" data-image="src/assets/fn.png" data-reload="France">FN</option>
-                            <option value="us" data-image="src/assets/us.png" data-reload="United States">US</option>
-                          </select></div><div class="dd ddcommon borderRadius" id="lng_select_msdd" style="width: 46px;"><div class="ddTitle borderRadiusTp"><span class="divider"></span><span class="arrow arrowoff"></span><span class="ddTitleText " id="lng_select_title"><img src="src/assets/eng.png" class="fnone"><span class="ddlabel">EN</span><span class="description" style="display: none;"></span></span></div><input id="lng_select_titleText" type="text" autocomplete="off" class="text shadow borderRadius" style="display: none;"><div class="ddChild ddchild_ border shadow" id="lng_select_child" style="z-index: 9999; display: none; position: absolute;"><ul><li class="enabled _msddli_ selected" title="English"><img src="src/assets/eng.png" class="fnone"><span class="ddlabel">EN</span><div class="clear"></div></li><li class="enabled _msddli_" title="France"><img src="src/assets/fn.png" class="fnone"><span class="ddlabel">FN</span><div class="clear"></div></li><li class="enabled _msddli_" title="United States"><img src="src/assets/us.png" class="fnone"><span class="ddlabel">US</span><div class="clear"></div></li></ul></div></div>
+                          <div class="ddOutOfVision" id="lng_select_msddHolder" style="height: 0px; overflow: hidden; position: absolute;">
+                              <select name="countries" id="lng_select">
+                                <option value="en" data-image="src/assets/eng.png" data-reload="English">EN</option>
+                                <option value="fn" data-image="src/assets/fn.png" data-reload="France">FN</option>
+                                <option value="us" data-image="src/assets/us.png" data-reload="United States">US</option>
+                              </select>
+                          </div>
+                        <div class="dd ddcommon borderRadius" id="lng_select_msdd" style="width: 46px;">
+                            <div class="ddTitle borderRadiusTp">
+                                <span class="divider"></span>
+                                <span class="arrow arrowoff"></span>
+                                <span class="ddTitleText " id="lng_select_title">
+                                    <img src="src/assets/eng.png" class="fnone">
+                                    <span class="ddlabel">EN</span>
+                                    <span class="description" style="display: none;"></span>
+                                </span>
+                            </div>
+                            <input id="lng_select_titleText" type="text" autocomplete="off" class="text shadow borderRadius" style="display: none;">
+                            <div class="ddChild ddchild_ border shadow" id="lng_select_child" style="z-index: 9999; display: none; position: absolute;">
+                                <ul>
+                                    <li class="enabled _msddli_ selected" title="English">
+                                        <img src="src/assets/eng.png" class="fnone">
+                                        <span class="ddlabel">EN</span>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li class="enabled _msddli_" title="France">
+                                        <img src="src/assets/fn.png" class="fnone">
+                                        <span class="ddlabel">FN</span>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li class="enabled _msddli_" title="United States">
+                                        <img src="src/assets/us.png" class="fnone">
+                                        <span class="ddlabel">US</span>
+                                        <div class="clear"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         </div>
                     </li>
                     <li class="animation wow fadeInDown" data-animation="fadeInDown" data-animation-delay="2s" style="animation-delay: 2s; opacity: 1;"><a class="btn btn-default btn-radius nav_item" href="">Login</a></li>
                 </ul>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item dropdown-item-lng" data-id="en" href="#">EN</a>
+                        <a class="dropdown-item dropdown-item-lng" data-id="fn" href="#">FN</a>
+                        <a class="dropdown-item dropdown-item-lng" data-id="us" href="#">US</a>
+                    </div>
+                </div>
 			</div>
 		</nav>
 	</div>
 </header>
-<!-- END HEADER --> 
+<!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
 <section id="home_section" class="section_banner banner_section blue_bg banner_rounded_shape">
@@ -107,7 +150,7 @@
                     <h1 data-localize="header_title" data-l10n-id="start-banner-title" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1.1s" style="animation-delay: 1.1s; opacity: 1;"></h1>
                     <p data-localize="header_desc" class="animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1.3s" style="animation-delay: 1.3s; opacity: 1;">
                     </p>
-                    <div class="btn_group animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;"> 
+                    <div class="btn_group animation wow fadeInUp" data-animation="fadeInUp" data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;">
                         <a data-localize="header_button_investor" href="#investors" class="btn btn-default btn-radius page-scroll">For investors <i class="ion-ios-arrow-forward"></i></a>
                         <a data-localize="header_button_startup" href="#startups" class="btn btn-border-white btn-radius">For startups <i class="ion-ios-arrow-forward"></i></a>
                         <div class="row d-flex text-center">
@@ -120,7 +163,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 order-first">
-                <div class="banner_image_right banner_img animation wow fadeInRight" data-animation-delay="1.5s" data-animation="fadeInRight" style="animation-delay: 1.5s; opacity: 1;"> 
+                <div class="banner_image_right banner_img animation wow fadeInRight" data-animation-delay="1.5s" data-animation="fadeInRight" style="animation-delay: 1.5s; opacity: 1;">
                     <img alt="banner_vector3" src="src/assets/main-bg.png">
                 </div>
           	</div>
@@ -874,23 +917,23 @@
 <!--footer end-->
 
 <a href="" class="scrollup btn-default" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
-<!-- Latest compiled and minified Bootstrap --> 
+<!-- Latest compiled and minified Bootstrap -->
 <script src="src/libs/bootstrap.min.js"></script>
-<!-- magnific-popup min js  --> 
+<!-- magnific-popup min js  -->
 <script src="src/libs/magnific-popup.min.js"></script>
-<!-- waypoints min js  --> 
+<!-- waypoints min js  -->
 <script src="src/libs/waypoints.min.js"></script>
-<!-- parallax js  --> 
+<!-- parallax js  -->
 <script src="src/libs/parallax.js"></script>
-<!-- countdown js  --> 
+<!-- countdown js  -->
 <script src="src/libs/jquery.countdown.min.js"></script>
-<!-- particles min js  --> 
+<!-- particles min js  -->
 <script src="src/libs/particles.min.js"></script>
-<!-- scripts js --> 
+<!-- scripts js -->
 <script src="src/libs/jquery.dd.min.js"></script>
-<!-- jquery.counterup.min js --> 
+<!-- jquery.counterup.min js -->
 <script src="src/libs/jquery.counterup.min.js"></script>
-<!-- modern_canvas js --> 
+<!-- modern_canvas js -->
 <script src="src/libs/modern_canvas.js"></script>
 <!-- owl-carousel min js  -->
 <script src="src/libs/owl.carousel.min.js"></script>
@@ -899,24 +942,25 @@
 <script>
     new WOW().init();
 </script>
-<!-- scripts js --> 
+<!-- scripts js -->
 <script src="src/js/scripts.js"></script>
 <script src="src/libs/jquery.localize.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-    $(function(){
-        var locale = 'en';
-        var opts = { language: locale, pathPrefix: "src/locales/", skipLanguage: "en-US" };
-        $("[data-localize]").localize("local", opts)
-    })
-
+    $('.dropdown-item-lng').click( function() {
+		var locale = $(this).attr('data-id');
+		var opts = { language: locale, pathPrefix: "src/locales/", skipLanguage: "en-US" };
+		$("[data-localize]").localize("local", opts)
+	})
 </script>
 <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
 <script>
     $(document).ready(function(){
         //Language Select Dropdown
-        $(document).ready(function() {
-            $("#lng_select,#doc_select").msDropdown();
-        })
+        // $(document).ready(function() {
+			// $('.arrow').click(function( ) {
+			// 	$("#lng_select").msDropDown();
+			// })
+        // })
 
         const url = 'https://medium.com/feed/evercity-blog';
         feednami.load(url)
